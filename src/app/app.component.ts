@@ -25,8 +25,8 @@ export class AppComponent {
                 type: 'person',
                 data: {
                     image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
-                    name: 'Anna Fali',
-                    title: 'CMO'
+                    name: 'Brandon',
+                    title: 'Dirección de Proyectos'
                 },
                 children: [
                     {
@@ -41,9 +41,26 @@ export class AppComponent {
                 expanded: true,
                 type: 'person',
                 data: {
-                    image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/stephenshaw.png',
-                    name: 'Stephen Shaw',
-                    title: 'CTO'
+                    image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
+                    name: 'Indrid',
+                    title: 'Dirección de Innovación y Bienes Materiales'
+                },
+                children: [
+                    {
+                        label: 'Development'
+                    },
+                    {
+                        label: 'UI/UX Design'
+                    }
+                ]
+            },
+            {
+                expanded: true,
+                type: 'person',
+                data: {
+                    image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
+                    name: 'Elizabeth',
+                    title: 'Dirección de Administración y finanzas'
                 },
                 children: [
                     {
