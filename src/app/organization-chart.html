@@ -1,7 +1,8 @@
 <h1 class="txt-center">ORGANIGRAMA ESTEVEZ.JOR</h1>
 
 <div class="card flex justify-content-center overflow-x-auto">
-    <p-organizationChart 
+    
+    <p-organizationChart cdkDrag
         [value]="data" 
         selectionMode="multiple" 
         [(selection)]="selectedNodes" 

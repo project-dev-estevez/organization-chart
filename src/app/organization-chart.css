@@ -1,3 +1,8 @@
 .txt-center{
     text-align: center;
 }
+
+.card {
+    overflow-x: auto;
+    overflow-y: auto;
+}
