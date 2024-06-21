@@ -1,6 +1,6 @@
 <h1 class="txt-center">ORGANIGRAMA ESTEVEZ.JOR</h1>
 
-<div class="card flex justify-content-center overflow-x-auto">
+<div class="card flex justify-content-center overflow-x-auto cursor-pointer">
     
     <p-organizationChart cdkDrag
         [value]="data" 
@@ -8,10 +8,9 @@
         [(selection)]="selectedNodes" 
         [collapsible]="true">
             <ng-template let-node pTemplate="person">
-                <div class="p-2 text-center">
-                    <img 
-                        [src]="node.data.image" 
-                        class="mb-3 w-3rem h-3rem" />
+                <div class="p-2 text-center node">
+                    <img src="https://placehold.co/200" 
+                         class="mb-3 w-3rem h-3rem avatar" />
                     <div class="font-bold">
                         {{ node.data.name }}
                     </div>

@@ -6,3 +6,24 @@
     overflow-x: auto;
     overflow-y: auto;
 }
+
+.avatar {
+    border-radius: 50%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.node {
+    width: 200px; /* Ajusta este valor según tus necesidades */
+    height: 130px; /* Ajusta este valor según tus necesidades */
+}
+
+.label-width {
+    width: 200px; /* Ajusta este valor según tus necesidades */
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 import { ImportsModule } from './imports';
 import { TreeNode } from 'primeng/api';
 
@@ -10,6 +10,9 @@ import { TreeNode } from 'primeng/api';
     imports: [ImportsModule]
 })
 export class OrganizationChart {
+
+    scale = 1;
+
     selectedNodes!: TreeNode[];
 
     data: TreeNode[] = [
@@ -17,7 +20,7 @@ export class OrganizationChart {
             expanded: true,
             type: 'person',
             data: {
-                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                image: 'https://placehold.co/200',
                 name: 'Jorge Estévez Abreu',
                 title: 'CEO'
             },
@@ -27,7 +30,7 @@ export class OrganizationChart {
                     type: 'person',
                     data: {
                         image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                        name: 'Ma. Fernanda Estevez Gonzalez',
+                        name: 'Ma. Fernanda Estévez Gonzalez',
                         title: 'DIRECTORA GENERAL'
                     },
                     children: [
@@ -36,8 +39,8 @@ export class OrganizationChart {
                             type: 'person',
                             data: {
                                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                name: 'Ma. Fernanda Estevez Gonzalez',
-                                title: 'DIRECTORA GENERAL'
+                                name: 'Brandon Jhoan de Jesus Hernandez',
+                                title: 'DIRECTOR DE PROYECTOS'
                             },
                         },
                         {
@@ -45,68 +48,115 @@ export class OrganizationChart {
                             type: 'person',
                             data: {
                                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                name: 'Ma. Fernanda Estevez Gonzalez',
-                                title: 'DIRECTORA GENERAL'
+                                name: 'Ingrid Martinez Baeza',
+                                title: 'DIRECTORA DE INNOVACIÓN Y BIENES MATERIALES'
                             },
                             children: [
                                 {
+                                    label: 'Almacén',
                                     expanded: true,
-                                    type: 'person',
-                                    data: {
-                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                        name: 'Nombre del nuevo nodo',
-                                        title: 'GERENTE DE ALMACÉN'
-                                    },
+                                    styleClass: 'bg-indigo-500 text-white label-width',
                                     children: [
                                         {
-                                            label: 'Sub-Almacenes',
                                             expanded: true,
+                                            type: 'person',
+                                            data: {
+                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                name: '***************',
+                                                title: 'GERENTE DE ALMACÉN'
+                                            },
                                             children: [
                                                 {
+                                                    label: 'Sub Almacénes',
                                                     expanded: true,
-                                                    type: 'person',
-                                                    data: {
-                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                                        name: 'Nombre del nuevo nodo',
-                                                        title: 'Coordinador de Sub-Almacenes'
-                                                    },
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR'
+                                                            },
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    label: 'Almacén General',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR'
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'AUXILIAR ADMINISTRATIVO'
+                                                                    },
+                                                                },
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'CHOFER ALMACENISTA'
+                                                                    },
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]   
+                                                },
+                                                {
+                                                    label: 'Almacén Foráneo',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR'
+                                                            },
+                                                        }
+                                                    ] 
                                                 }
                                             ]
-                                        },
-                                        {
-                                            label: 'Almacén General'
-                                        },
-                                        {
-                                            label: 'almacen foraneo'
                                         }
                                     ]
                                 },
                                 {
+                                    label: 'Adquisiciones',
                                     expanded: true,
-                                    type: 'person',
-                                    data: {
-                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                        name: 'Nombre del nuevo nodo',
-                                        title: 'Título del nuevo nodo'
-                                    },
+                                    styleClass: 'bg-indigo-500 text-white label-width',
                                 },
                                 {
+                                    label: 'Control Vehicular',
                                     expanded: true,
-                                    type: 'person',
-                                    data: {
-                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                        name: 'Nombre del nuevo nodo',
-                                        title: 'Título del nuevo nodo'
-                                    },
+                                    styleClass: 'bg-indigo-500 text-white label-width',
                                 },
                                 {
+                                    label: 'TI',
                                     expanded: true,
-                                    type: 'person',
-                                    data: {
-                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                        name: 'Nombre del nuevo nodo',
-                                        title: 'Título del nuevo nodo'
-                                    },
+                                    styleClass: 'bg-indigo-500 text-white label-width',
+                                },
+                                {
+                                    label: 'Laboratorio',
+                                    expanded: true,
+                                    styleClass: 'bg-indigo-500 text-white label-width',
                                 }
                             ]
                         },
@@ -115,55 +165,36 @@ export class OrganizationChart {
                             type: 'person',
                             data: {
                                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                                name: 'Ma. Fernanda Estevez Gonzalez',
-                                title: 'DIRECTORA GENERAL'
+                                name: 'Elizabeth Gonzalez Herrera',
+                                title: 'DIRECTORA DE ADMINISTRACIÓN Y FINANZAS'
                             },
                         }
                     ]
-                },
-                // {
-                //     expanded: true,
-                //     type: 'person',
-                //     styleClass: 'bg-teal-500 text-white',
-                //     data: {
-                //         image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                //         name: 'Nombre del nuevo nodo',
-                //         title: 'Título del nuevo nodo'
-                //     },
-                //     children: [
-                //         {
-                //             expanded: true,
-                //             type: 'person',
-                //             styleClass: 'bg-teal-500 text-white',
-                //             data: {
-                //                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                //                 name: 'Nombre del nuevo nodo',
-                //                 title: 'Título del nuevo nodo'
-                //             },
-                //         },
-                //         {
-                //             expanded: true,
-                //             type: 'person',
-                //             styleClass: 'bg-teal-500 text-white',
-                //             data: {
-                //                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                //                 name: 'Nombre del nuevo nodo',
-                //                 title: 'Título del nuevo nodo'
-                //             },
-                //         },
-                //         {
-                //             expanded: true,
-                //             type: 'person',
-                //             styleClass: 'bg-teal-500 text-white',
-                //             data: {
-                //                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
-                //                 name: 'Nombre del nuevo nodo',
-                //                 title: 'Título del nuevo nodo'
-                //             },
-                //         }
-                //     ]
-                // }
+                }
             ]
         }
     ];
+
+    constructor(
+        private el: ElementRef
+    ) { }
+
+    @HostListener('wheel', ['$event'])
+    onWheel(event) {
+        event.preventDefault();
+
+        if (event.deltaY < 0) {
+            // Zoom in
+            this.scale += 0.1;
+        } else {
+            // Zoom out
+            this.scale -= 0.1;
+        }
+
+        // Limit scale: 0.1 <= scale <= 2
+        this.scale = Math.min(Math.max(.1, this.scale), 2);
+
+        const element = this.el.nativeElement.querySelector('.p-organizationchart-table');
+        element.style.transform = `scale(${this.scale})`;
+    }
 }
