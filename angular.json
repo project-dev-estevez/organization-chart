@@ -6,7 +6,7 @@
     },
     "newProjectRoot": "projects",
     "projects": {
-      "example-app": {
+      "organization-chart": {
         "projectType": "application",
         "schematics": {
           "@schematics/angular:component": {
@@ -23,7 +23,7 @@
           "build": {
             "builder": "@angular-devkit/build-angular:browser",
             "options": {
-              "outputPath": "dist/example-app",
+              "outputPath": "dist/organization-chart",
               "index": "src/index.html",
               "main": "src/main.ts",
               "polyfills": ["zone.js"],
@@ -47,7 +47,7 @@
                   {
                     "type": "initial",
                     "maximumWarning": "500kb",
-                    "maximumError": "1mb"
+                    "maximumError": "5mb"
                   },
                   {
                     "type": "anyComponentStyle",
@@ -72,10 +72,10 @@
             "builder": "@angular-devkit/build-angular:dev-server",
             "configurations": {
               "production": {
-                "buildTarget": "example-app:build:production"
+                "buildTarget": "organization-chart:build:production"
               },
               "development": {
-                "buildTarget": "example-app:build:development"
+                "buildTarget": "organization-chart:build:development"
               }
             },
             "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
           "extract-i18n": {
             "builder": "@angular-devkit/build-angular:extract-i18n",
             "options": {
-              "browserTarget": "example-app:build"
+              "browserTarget": "organization-chart:build"
             }
           },
           "test": {
