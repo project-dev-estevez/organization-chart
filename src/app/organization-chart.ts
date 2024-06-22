@@ -42,6 +42,511 @@ export class OrganizationChart {
                                 name: 'Brandon Jhoan de Jesus Hernandez',
                                 title: 'DIRECTOR DE PROYECTOS'
                             },
+                            children: [
+                                {
+                                    label: 'Operaciones',
+                                    expanded: true,
+                                    styleClass: 'bg-indigo-500 text-white label-width',
+                                    children: [
+                                        {
+                                            type: 'person',
+                                            data: {
+                                            expanded: true,
+                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                name: '***************',
+                                                title: 'GERENTE DE OPERACIONES'
+                                            },
+                                            children: [
+                                                {
+                                                    label: 'Construcción',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'SUPER INTENDENTE'
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'SUPERVISOR'
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'LIDER DE CUADRILLA'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'MONTADOR'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'AUXILIARES'
+                                                                            },
+                                                                        },
+                                                                    ]
+                                                                },
+                                            
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    label: 'Empalmes',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR DE EMPALMES'
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'SUPERVISOR'
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'EMPALMADOR MEDIDOR'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'EMPALMADOR'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'AUXILIARES'
+                                                                            },
+                                                                        },
+                                                                    ]
+                                                                },
+                                            
+                                                            ]
+                                                        }
+                                                    ]   
+                                                },
+                                                {
+                                                    label: 'Mantenimiento',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR DE MANTENIMIENTO'
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'ANALISTA DE PROYECTOS'
+                                                                    },
+                                                                },
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'SUPERVISOR'
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'EMPALMADOR MEDIDOR'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'EMPALMADOR'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'TÉCNICO DE MANTENIMIENTO'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'AUXILIARES'
+                                                                            },
+                                                                        },
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ] 
+                                                },
+                                                {
+                                                    label: 'Obra Civil',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR'
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'LIDER DE ALMACEN FORANEO'
+                                                                    },
+                                                                },
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'CHOFER ALMACENISTA'
+                                                                    },
+                                                                }
+                                                            ]
+                                                        }
+                                                    ] 
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: 'Ingeniería',
+                                    expanded: true,
+                                    styleClass: 'bg-indigo-500 text-white label-width',
+                                    children: [
+                                        {
+                                            type: 'person',
+                                            data: {
+                                            expanded: true,
+                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                name: '***************',
+                                                title: 'GERENTE DE ADQUISICIONES'
+                                            },
+                                            children: [
+                                                {
+                                                    label: 'Adquisiciones',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR'
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'LÍDER DE COMPRAS'
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'AUXILIAR DE COMPRAS'
+                                                                            },
+                                                                        }
+                                                                    ]
+                                                                },    
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    label: 'Servicios Generales',
+                                                    expanded: true,
+                                                    styleClass: 'bg-purple-500 text-white label-width',
+                                                    children: [
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'COORDINADOR'
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'LÍDER DE MANTENIMIENTO'
+                                                                    },
+                                                                },
+                                                            ]
+                                                        }
+                                                    ]   
+                                                },
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: 'PMO',
+                                    expanded: true,
+                                    styleClass: 'bg-indigo-500 text-white label-width',
+                                    children: [
+                                        {
+                                            type: 'person',
+                                            data: {
+                                            expanded: true,
+                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                name: '***************',
+                                                title: 'GERENTE DE CONTROL VEHICULAR'
+                                            },
+                                            children:[
+                                                {
+                                                    type: 'person',
+                                                    data: {
+                                                    expanded: true,
+                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                        name: '***************',
+                                                        title: 'COORDINADOR DE CONTROL VEHICULAR'
+                                                    },
+                                                    children: [
+                                                        {
+                                                            label: 'Monitoreo',
+                                                            expanded: true,
+                                                            styleClass: 'bg-purple-500 text-white label-width',
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'LIDER DE MONITOREO'
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'MONITORISTAS'
+                                                                            },
+                                                                        },
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            label: 'Taller',
+                                                            expanded: true,
+                                                            styleClass: 'bg-purple-500 text-white label-width',
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'LIDER DE TALLER'
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'TÉCNICO EN GASOLINA'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'HOJALATERO'
+                                                                            },
+                                                                        },
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'SOLDADOR'
+                                                                            },
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]   
+                                                        },
+                                                        {
+                                                            label: 'Gestoría Vehicular',
+                                                            expanded: true,
+                                                            styleClass: 'bg-purple-500 text-white label-width',
+                                                            children: [
+                                                                {
+                                                                    expanded: true,
+                                                                    type: 'person',
+                                                                    data: {
+                                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                        name: '****************',
+                                                                        title: 'LIDER DE GESTORIA VEHICULAR'
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            expanded: true,
+                                                                            type: 'person',
+                                                                            data: {
+                                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                                name: '****************',
+                                                                                title: 'ANALISTA DE GESTIÓN DE COMBUSTIBLE'
+                                                                            },
+                                                                        },
+                                                                    ]
+                                                                }
+                                                            ] 
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                            
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: 'Administración de Obra',
+                                    expanded: true,
+                                    styleClass: 'bg-indigo-500 text-white label-width',
+                                    children:[
+                                        {
+                                            type: 'person',
+                                            data: {
+                                            expanded: true,
+                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                name: '***************',
+                                                title: 'GERENTE DE TI'
+                                            },
+                                            children:[
+                                                {
+                                                    type: 'person',
+                                                    data: {
+                                                    expanded: true,
+                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                        name: '***************',
+                                                        title: 'COORDINADOR DE TI'
+                                                    },
+                                                    children:[
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'LIDER DE TI'
+                                                            },
+                                                        },
+                                                        {
+                                                            expanded: true,
+                                                            type: 'person',
+                                                            data: {
+                                                                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                                name: '****************',
+                                                                title: 'AUXILIAR DE TI'
+                                                            },
+                                                        },
+                                                        
+                                                    ]
+                                                    
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                            ]
                         },
                         {
                             expanded: true,
@@ -738,7 +1243,27 @@ export class OrganizationChart {
                                                 image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
                                                 name: '***************',
                                                 title: 'GERENTE JURÍDICO'
-                                            },                                            
+                                            },
+                                            children:[
+                                                {
+                                                    type: 'person',
+                                                    data: {
+                                                    expanded: true,
+                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                        name: '***************',
+                                                        title: 'ABOGADO COORPORATIVO'
+                                                    }, 
+                                                },
+                                                {
+                                                    type: 'person',
+                                                    data: {
+                                                    expanded: true,
+                                                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                                                        name: '***************',
+                                                        title: 'ABOGADO JR'
+                                                    }, 
+                                                }
+                                            ]                                            
                                         }
                                     ]
                                 },
